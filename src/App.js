@@ -20,7 +20,7 @@ const API_key = 'fcbba02a3a77faea0ff178abf1ad0951';
 e.preventDefault();
 const city = e.target.elements.city.value;
 const country = e.target.elements.country.value;
-const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_key}&units=metric`
+const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_key}&units=metric`
 const api_call = await fetch(URL);
 const data = await api_call.json();
 
